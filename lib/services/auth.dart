@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-
+import 'package:rive_animation/localdb.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -25,5 +25,8 @@ Future<User?> signinWithGoogle() async {
   final User? currentUser = await _auth.currentUser;
   assert(currentUser?.uid == user?.uid);
   print(user);
+  LocaldataSaver.saveName(user!.displayName.toString());
+  LocaldataSaver.saveEmail(user!.email.toString());
+  LocaldataSaver.saveImage(user!.photoURL.toString());
   return user;
 }
