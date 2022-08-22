@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:rive_animation/constant.dart';
+import 'package:rive_animation/services/auth.dart';
 import 'package:rive_animation/views/login1.dart';
-import 'package:toast/toast.dart';
 
 class drawer1 extends StatefulWidget {
   const drawer1({Key? key}) : super(key: key);
@@ -13,6 +13,12 @@ class drawer1 extends StatefulWidget {
 }
 
 class _drawer1State extends State<drawer1> {
+  SignOutMethod(context) async {
+    await signOut();
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => Login()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -138,8 +144,7 @@ class _drawer1State extends State<drawer1> {
                 size: 30,
               ),
               onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => login()));
+                SignOutMethod(context);
               },
               title: Text(
                 "Logout",
