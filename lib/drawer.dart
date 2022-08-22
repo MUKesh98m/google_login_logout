@@ -27,7 +27,7 @@ class _drawer1State extends State<drawer1> {
                 accountName: Text(constant.name),
                 accountEmail: Text(constant.email),
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage(constant.image),
+                  backgroundImage: NetworkImage(constant.img),
                 ),
               ),
             ),
