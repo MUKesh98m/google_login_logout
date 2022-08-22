@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "828870653473",
+    "project_id": "login-9a421",
+    "storage_bucket": "login-9a421.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828870653473:android:5088cdb8d1ae7f9da95560",
+        "android_client_info": {
+          "package_name": "com.example.rive_animation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828870653473-ovleu0sdikjev08i4bkjgv7gsp0d3pmp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rive_animation",
+            "certificate_hash": "6a1b005170222fa84e3262a157ebc6fae33c12c3"
+          }
+        },
+        {
+          "client_id": "828870653473-6rvnbf2c0mrbm5est49k0aqg1vpchbtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0j0CnKpfaMDJTZebGsV1CqcWzZU8T26g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828870653473-6rvnbf2c0mrbm5est49k0aqg1vpchbtt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
